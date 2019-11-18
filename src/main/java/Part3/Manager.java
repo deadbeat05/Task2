@@ -43,8 +43,7 @@ public class Manager extends Employee {
         if (this == o) return true;
         if (!(o instanceof Manager)) return false;
         Manager manager = (Manager) o;
-        return Double.compare(manager.workRate, workRate) == 0 &&
-                Double.compare(manager.workedHours, workedHours) == 0;
+        return Double.compare(manager.getWorkRate(), workRate) == 0 && Double.compare(manager.getWorkedHours(), workedHours) == 0;
     }
 
     @Override

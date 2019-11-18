@@ -44,8 +44,7 @@ public class Programmer extends Employee {
         if (this == o) return true;
         if (!(o instanceof Programmer)) return false;
         Programmer that = (Programmer) o;
-        return Double.compare(that.workRate, workRate) == 0 &&
-                Double.compare(that.workedHours, workedHours) == 0;
+        return Double.compare(that.getWorkRate(), workRate) == 0 && Double.compare(that.getWorkedHours(), workedHours) == 0;
     }
 
     @Override

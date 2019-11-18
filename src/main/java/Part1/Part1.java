@@ -15,9 +15,9 @@ public class Part1 {
             }
         }
         finalLine = sb.toString();
-        finalLine = finalLine.replaceAll("^\\*", "");
+        finalLine = finalLine.replaceAll("^\\*", "^");
         finalLine = finalLine.replaceAll("\\*\\*", "\\*");
-        finalLine = finalLine.replaceAll("\\*$", "\0");
+        finalLine = finalLine.replaceAll("\\*$", "");
         return finalLine;
     }
 }
